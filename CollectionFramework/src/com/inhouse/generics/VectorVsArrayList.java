@@ -42,6 +42,11 @@ public class VectorVsArrayList {
     	while(itr.hasNext())
     		System.out.print(itr.next()+",");
 
+    	System.out.println("\nVector capacity : " + vector.capacity()); // default vector capacity is 10
+		for(int i=0; i<7;i++) {
+			vector.add(rand.nextInt(100));
+		}
+		System.out.println("\nVector capacity, size : " + vector.capacity() +", " + vector.size()); // capacity is doubled
     	/*
     	 * Most of the time, programmers prefer ArrayList over Vector because ArrayList can
     	 * be synchronized explicitly using Collections.synchronizedList.

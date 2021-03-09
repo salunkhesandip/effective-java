@@ -38,8 +38,6 @@ public class PrimitiveDataTypeEx {
 		list.add(25);
 		System.out.println("Auto-boxing of int to Integer " + list.get(0));
 		// The automatic conversion of primitive data type into its corresponding wrapper class is known as autoboxing
-		
-		
 	}
 
 }
