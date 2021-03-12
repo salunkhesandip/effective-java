@@ -33,16 +33,16 @@ public class CopyOnWriteArrayListEx {
 		// add, remove operator is not supported by CopyOnWriteArrayList iterator
 		
 
-		new ReadThread("Reader", threadSafeList).start();
+		new ReaderThread("Reader", threadSafeList).start();
 		new WriterThread("Writer",threadSafeList).start();
 	}
 
 }
 
-class ReadThread extends Thread{
+class ReaderThread extends Thread{
 	private List<Integer> list;
 	
-	public ReadThread(String name, List<Integer> list){
+	public ReaderThread(String name, List<Integer> list){
 		this.list = list;
 		super.setName(name);
 	}
