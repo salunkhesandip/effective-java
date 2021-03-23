@@ -25,7 +25,8 @@ public class ThreadPoolEx {
 		executor.shutdown();
 		
 		try {
-			executor.awaitTermination(1, TimeUnit.DAYS);
+			if(!executor.awaitTermination(6000, TimeUnit.MILLISECONDS));
+				executor.shutdownNow();
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
