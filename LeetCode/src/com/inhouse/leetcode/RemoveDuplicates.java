@@ -13,9 +13,7 @@ public class RemoveDuplicates {
 		for(int i = 0 ; i < len ; i++)
 			System.out.println(nums[i]);
 	}
-	
-	
-	
+
 
 	private static int removeDuplicates(int[] nums) {
 		if(nums.length == 0)
