@@ -7,7 +7,7 @@ import java.util.Locale;
 public class CurrencyFormatEx {
 
 	public static void main(String[] args) {
-		double curamt = 11.23;
+		double curamt = 1111.23;
 		Locale usa = new Locale("en","US");
 		System.out.println(usa);
 		Currency dollars = Currency.getInstance(usa);
