@@ -13,11 +13,11 @@ public class CountPrime {
 		if(num < 2)
 			return 0;
 		
-		boolean [] numbers = new boolean[num];
-		
-		for(int p = 2; p <= (int)Math.sqrt(num); ++p) {
+		boolean [] numbers = new boolean[num]; // default array is initialized to false
+	
+		for(int p = 2; p <= (int)Math.sqrt(num); ++p) { // p 2, 3
 			if(numbers[p] == false) {
-				for(int j = p*p; j < num; j += p) {
+				for(int j = p*p; j < num; j += p) { //j = 1st loop 4, 6, 8 2nd loop 9
 					numbers[j] = true;
 				}
 			}
