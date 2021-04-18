@@ -2,6 +2,7 @@ package com.inhouse.generics;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Random;
 
 public class LinkedListVsArrayList {
@@ -9,6 +10,7 @@ public class LinkedListVsArrayList {
 	public static void main(String[] args) {
 		LinkedList<Integer> numbers = new LinkedList<Integer>();
 		ArrayList<Integer> list = new ArrayList<Integer>();
+
 		
 		// LinkedList internally uses a doubly linked list to store the elements.
 		// ArrayList internally uses a dynamic array to store the elements.
