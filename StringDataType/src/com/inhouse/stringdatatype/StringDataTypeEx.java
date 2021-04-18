@@ -37,6 +37,9 @@ public class StringDataTypeEx {
 		System.out.println(source.startsWith("St",6));
 		System.out.println(source.indexOf("St"));
 		
+		String str1="b";
+		String str2 = "a";
+		System.out.println(str1.compareTo(str2));
 		
 		/*
 		 *  If we want to increase the pool size in terms of buckets, 

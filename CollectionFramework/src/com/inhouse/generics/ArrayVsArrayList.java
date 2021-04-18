@@ -6,6 +6,7 @@ public class ArrayVsArrayList {
 
 	public static void main(String[] args) {
 		Integer[] array = new Integer[20]; // array memory is allocated on creation
+		
 		System.out.println("Size of an array : " + array.length);
 		/* 
 		 * Arrays are fixed size. 
