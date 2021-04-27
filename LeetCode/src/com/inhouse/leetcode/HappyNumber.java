@@ -8,7 +8,7 @@ import java.util.List;
 public class HappyNumber {
 
 	public static void main(String[] args) {
-		int n = 2;
+		int n = 100;
 		boolean result = isHappy(n);
 		System.out.println(result);
 	}
@@ -31,7 +31,8 @@ public class HappyNumber {
 				sum = 0;
 				continue;
 			}
+			
 		}
-		return (sum == 1 ||sum == 7)? true:false;
+		return true;
 	}
 }
