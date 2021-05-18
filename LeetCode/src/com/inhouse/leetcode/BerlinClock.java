@@ -58,7 +58,7 @@ public class BerlinClock {
 	}
 
 	public static void main(String[] args) {
-		BerlinClock clock = new BerlinClock("10:20:30");
+		BerlinClock clock = new BerlinClock("11:20:00");
 		clock.printClock();
 	}
 

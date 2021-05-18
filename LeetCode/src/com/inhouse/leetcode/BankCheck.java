@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class BankCheck {
 
 	public static void main(String[] args) {
-		String amount = "333";
+		String amount = "90";
 		String money = formatMoney(amount);
 		System.out.println(money);
 	}
