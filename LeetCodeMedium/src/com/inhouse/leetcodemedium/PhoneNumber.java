@@ -33,7 +33,7 @@ public class PhoneNumber {
 		String letters = mapping[digits.charAt(start) - '0'];
 		for(int i = 0; i < letters.length(); i++) {
 			StringBuilder sb = new StringBuilder().append(prefix).append(letters.charAt(i));
-			letterCombinationsRecursive(result, digits,sb, start+1, mapping);
+		 	letterCombinationsRecursive(result, digits,sb, start+1, mapping);
 		}		
 	}
 }
