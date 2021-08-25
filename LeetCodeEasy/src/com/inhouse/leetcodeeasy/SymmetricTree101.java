@@ -1,6 +1,6 @@
 package com.inhouse.leetcodeeasy;
 
-import java.util.Stack;
+//import java.util.Stack;
 
 /*
  * Given the root of a binary tree, check whether it is a mirror of itself (i.e., symmetric around its center).
@@ -10,7 +10,7 @@ public class SymmetricTree101 {
 	public static void main(String[] args) {
 		TreeNode root = new TreeNode(1);
 		TreeNode left = new TreeNode(2);
-		TreeNode right = new TreeNode(3);
+		TreeNode right = new TreeNode(2);
 		root.left = left;
 		root.right = right;
 		
@@ -23,6 +23,7 @@ public class SymmetricTree101 {
 	}
 
 	// Recursive approach
+	
 	private static boolean isMirror(TreeNode t1, TreeNode t2) {
 		if(t1 == null & t2 == null) return true;
 		if(t1 == null || t2 == null) return false;
@@ -30,7 +31,7 @@ public class SymmetricTree101 {
 		return (t1.val == t2.val) && isMirror(t1.left, t2.right) && isMirror(t1.right,t2.left);
 	}
 
-	// Iterative approach
+/*	// Iterative approach
 	private static boolean isSymmentricIterative(TreeNode root) {
 		Stack<TreeNode> left = new Stack<TreeNode>();
 		Stack<TreeNode> right = new Stack<TreeNode>();
@@ -56,4 +57,5 @@ public class SymmetricTree101 {
 		}
 		return true;
 	}
+*/
 }
